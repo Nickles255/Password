@@ -7,8 +7,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 
-public class PassWordPane extends GridPane {
-	public class PassWordCreator extends Application {
+public class PassWordPane extends GridPane { 
 		/**
 			* PassWordPane --- program to generate password based on users input 
 			* This class is dependent on PassWordCreate program to display.
