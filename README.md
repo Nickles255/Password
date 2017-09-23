@@ -6,7 +6,9 @@ Assignment3 Password Project
     A) A class called PassWordCreator inside a file named PassWordCreator.java
     This class contains the main() method that creates and displays the 'window' for the program.This is the driver program.
 
-    B) A class called PassWordPane that instantiates 4 Labels and 2 TextFields.  It also contains the 'handlers' that 'listen' and respond when a user types into the TextFields and presses <enter>.  In Swing these are inner classes, in Java FX they are method references. The file is named PassWordPane.java
+    B) A class called PassWordPane that instantiates 4 Labels and 2 TextFields.  
+    It also contains the 'handlers' that 'listen' and respond when a user types into the TextFields and presses <enter>. 
+    In Swing these are inner classes, in Java FX they are method references. The file is named PassWordPane.java
 
     The password is displayed by the 4th Label and uses this algorithm:
     I   first 2 letters of name
