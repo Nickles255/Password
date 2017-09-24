@@ -21,6 +21,44 @@ public class PassWordPane extends GridPane {
 			*           input: name:Chris, date: 091717 
 			*           output: Ch.521717
 		**/	
+	private Label result;
+	private TextField inputName;
+	private TextField inputDate;
 	
-	
+	 public PassWordPane() {
+	    Font font = new Font(18);
+		 
+	     //Team Label creation.
+	     Label teamLabel = new Label("Chien Lin, Lena Zheng, Qd Li");
+	     teamLabel.setFont(font);
+	     GridPane.setHalignment(teamLabel, HPos.LEFT);
+			
+	     //Accept Name input.
+	     Label inputNameLabel = new Label("Please enter name: ");
+	     inputNameLabel.setFont(font);
+	     GridPane.setHalignment(inputNameLabel, HPos.RIGHT);
+			
+	     inputName = new TextField();
+	     inputName.setFont(font);
+	     inputName.setPrefWidth(200);
+	     inputName.setAlignment(Pos.CENTER);
+	     inputName.setOnAction(this::processName);
+		 
+	     //Accept Date input			
+	     Label inputDateLabel = new Label("Please enter a date: ");
+             inputDateLabel.setFont(font);
+	     GridPane.setHalignment(inputDateLabel, HPos.RIGHT);
+			
+	     inputDate = new TextField();
+	     inputDate.setFont(font);
+	     inputDate.setPrefWidth(200);
+	     inputDate.setAlignment(Pos.CENTER);
+	     inputDate.setPromptText("mmddyy");
+	     inputDate.setOnAction(this::processDate);
+			
+	      //Label to store Result 
+	      result = new Label();
+	      result.setFont(font);
+	      GridPane.setHalignment(result, HPos.CENTER);
+			
 }
