@@ -17,20 +17,16 @@ public class PassWordCreator extends Application {
 	*           input: name:Chris, date: 091717 
 	*           output: Ch.521717
 **/	
-	public void start(Stage primaryStage)
-    {
-        Scene scene = new Scene(new PassWordPane(), 300, 150);
+	public void start(Stage primaryStage) {
+         Scene scene = new Scene(new PassWordPane(), 300, 150);
         
-        primaryStage.setTitle("Password Creator");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-    }
+         primaryStage.setTitle("Password Creator");
+         primaryStage.setScene(scene);
+         primaryStage.show();
+        }
 	
 	public static void main(String[] args) {
-		
            launch(args);
 	}
 		
-	}
-
 }
