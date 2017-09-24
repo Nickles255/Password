@@ -18,7 +18,7 @@ public class PassWordCreator extends Application {
 	*           output: Ch.521717
 **/	
 	public void start(Stage primaryStage) {
-         Scene scene = new Scene(new PassWordPane(), 300, 150);
+         Scene scene = new Scene(new PassWordPane(), 500, 300);
         
          primaryStage.setTitle("Password Creator");
          primaryStage.setScene(scene);
