@@ -42,7 +42,7 @@ public class PassWordPane extends GridPane {
 	     inputName.setFont(font);
 	     inputName.setPrefWidth(200);
 	     inputName.setAlignment(Pos.CENTER);
-	     inputName.setOnAction(this::processName);
+	     inputName.setOnAction(this::processResult);
 		 
 	     //Accept Date input			
 	     Label inputDateLabel = new Label("Please enter a date: ");
@@ -54,7 +54,7 @@ public class PassWordPane extends GridPane {
 	     inputDate.setPrefWidth(200);
 	     inputDate.setAlignment(Pos.CENTER);
 	     inputDate.setPromptText("mmddyy");
-	     inputDate.setOnAction(this::processDate);
+	     inputDate.setOnAction(this::processResult);
 			
 	      //Label to store Result 
 	      result = new Label();
@@ -62,3 +62,21 @@ public class PassWordPane extends GridPane {
 	      GridPane.setHalignment(result, HPos.CENTER);
 			
 }
+	
+	public void processResult(ActionEvent event){
+         Random ran = new Random();// random number generator
+       
+         String log = inputName.getText();
+       int pass =Integer.parseInt( inputDate.getText());
+       
+       //Gets the last 4 digit 
+       int fourdigit = pass%10000; 
+       
+       int num = ran.nextInt(90)+10;//random number 10-99
+       
+       /*displays the first two letter, 1-2 digit random number, 
+       and last 4 digit of the date*/
+       result.setText(log.substring(0,2) +"."+num+ fourdigit+ "");
+     }
+	
+	
