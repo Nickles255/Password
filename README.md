@@ -55,7 +55,7 @@ Tasks:
                                    ii.  label and textfield to enter name of user (require name of method handler from a.)
                                    iii. label and textfield to enter a date (require name of method handler from a.)
                                    iv.  label for return value 
-                                c. set positioning of labels (require label names from person doing b.) (complete by 9/27/2017)- LZ
+                                c. set positioning of labels (require label names from person doing b.) (complete by 9/30/2017)- LZ
                                 d. test program (complete by 10/1/2017) - CL
                                 e. submit program (due 10/3/2017) - CL
 
