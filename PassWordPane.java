@@ -68,7 +68,10 @@ public class PassWordPane extends GridPane {
 	       add(teamLabel, 0, 0);
 	       add(inputNameLabel,0,1);
 	       add(inputName,1,1);
-			
+	       add(inputDateLabel,0,2);
+	       add(inputDate,1,2);
+	       add(result,0,3);
+
         }
 	
 	public void processResult(ActionEvent event){
