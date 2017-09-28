@@ -6,9 +6,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
+import java.util.Random;
 
 public class PassWordPane extends GridPane { 
-		/**
+        /**
 			* PassWordPane --- program to generate password based on users input 
 			* This class is dependent on PassWordCreate program to display.
 			* @author(s) Chien Lin, Lena Zheng, Qd Li
@@ -25,7 +26,7 @@ public class PassWordPane extends GridPane {
 	private TextField inputName;
 	private TextField inputDate;
 	
-	 public PassWordPane() {
+		public PassWordPane() {
 	    Font font = new Font(18);
 		 
 	     //Team Label creation.
@@ -60,8 +61,15 @@ public class PassWordPane extends GridPane {
 	      result = new Label();
 	      result.setFont(font);
 	      GridPane.setHalignment(result, HPos.CENTER);
+
+	      setStyle("-fx-background-color: yellow");
+
+           //set the positioning
+	       add(teamLabel, 0, 0);
+	       add(inputNameLabel,0,1);
+	       add(inputName,1,1);
 			
-}
+        }
 	
 	public void processResult(ActionEvent event){
          Random ran = new Random();// random number generator
@@ -78,5 +86,5 @@ public class PassWordPane extends GridPane {
        and last 4 digit of the date*/
        result.setText(log.substring(0,2) +"."+num+ fourdigit+ "");
      }
-	
+}	
 	
