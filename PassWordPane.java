@@ -81,7 +81,7 @@ public class PassWordPane extends GridPane {
     //Capture User's name and birthday and outputs generated password
     public void processResult(ActionEvent event){
         Random ran = new Random();// random number generator
-        DecimalFormat fourDigitFormat = new DecimalFormat("0000"); //format in case fourdigit starts with a 0
+        // DecimalFormat fourDigitFormat = new DecimalFormat("0000"); //format in case fourdigit starts with a 0
        
         String name = inputName.getText();
         // int birthday =Integer.parseInt( inputDate.getText());
