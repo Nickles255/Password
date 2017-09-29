@@ -66,7 +66,7 @@ public class PassWordPane extends GridPane {
 
         setStyle("-fx-background-color: yellow");
 
-        //set the positioning
+        //set Positions of labels, textfields, and output field
         add(teamLabel, 0, 0);
         add(inputNameLabel,0,1);
         add(inputName,1,1);
