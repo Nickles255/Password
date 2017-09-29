@@ -1,3 +1,14 @@
+/**
+* @author(s) Chien Lin, Lena Zheng, Qd Li
+* @version 1.0
+* @since 2017-09-15
+* input: name and date
+* output: password consisting of first two letters of name followed by a period
+*         followed by a two digit random number followed by last for digit of date
+* Example: 
+*           input: name:Chris, date: 091717 
+*           output: Ch.521717
+*/
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.geometry.HPos;
@@ -12,15 +23,6 @@ public class PassWordPane extends GridPane {
     /**
     * PassWordPane --- program to generate password based on users input 
     * This class is dependent on PassWordCreate program to display.
-    * @author(s) Chien Lin, Lena Zheng, Qd Li
-    * @version 1.0
-    * @since 2017-09-15
-    * input: name and date
-    * output: password consisting of first two letters of name followed by a period
-    *         followed by a two digit random number followed by last for digit of date
-    * Example: 
-    *           input: name:Chris, date: 091717 
-    *           output: Ch.521717
     **/	
     private Label result;
     private TextField inputName;
