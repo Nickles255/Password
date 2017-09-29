@@ -84,17 +84,19 @@ public class PassWordPane extends GridPane {
         DecimalFormat fourDigitFormat = new DecimalFormat("0000"); //format in case fourdigit starts with a 0
        
         String name = inputName.getText();
-        int birthday =Integer.parseInt( inputDate.getText());
-       
-        //Gets the last 4 digit 
-        int fourdigit = birthday%10000; //need to format this to 0000
-       
+        // int birthday =Integer.parseInt( inputDate.getText());
+        String birthday = inputDate.getText().substring(2,6); //get as string instead, so don't need to do math on it
+
         // int num = ran.nextInt(90)+10;//random number 10-99
         int num = ran.nextInt(100); //random 1-2 digit number
        
+        //Gets the last 4 digit 
+        // int fourdigit = birthday%10000; //need to format this to 0000
+       
         /*displays the first two letter, 1-2 digit random number, 
         and last 4 digit of the date*/
-        result.setText(name.substring(0,2) +"."+num+ fourDigitFormat.format(fourdigit)+ "");
+        // result.setText(name.substring(0,2) +"."+num+ fourDigitFormat.format(fourdigit)+ "");
+        result.setText(name.substring(0,2) +"."+num+ birthday+ "");
     }
 }	
 	
