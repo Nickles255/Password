@@ -43,7 +43,8 @@ public class PassWordPane extends GridPane {
 			
         inputName = new TextField();
         inputName.setFont(font);
-        inputName.setPrefWidth(200);
+        // inputName.setPrefWidth(200);
+        inputName.setPrefColumnCount(5); //replace with correct method
         inputName.setAlignment(Pos.CENTER);
         inputName.setOnAction(this::processResult);
 		 
@@ -54,7 +55,8 @@ public class PassWordPane extends GridPane {
 			
         inputDate = new TextField();
         inputDate.setFont(font);
-        inputDate.setPrefWidth(200);
+        // inputDate.setPrefWidth(200);
+        inputDate.setPrefColumnCount(5); //replace with correct method
         inputDate.setAlignment(Pos.CENTER);
         inputDate.setPromptText("mmddyy");
         inputDate.setOnAction(this::processResult);
