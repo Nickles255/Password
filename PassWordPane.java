@@ -18,7 +18,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import java.util.Random;
-import java.text.DecimalFormat;
+// import java.text.DecimalFormat;
 
 public class PassWordPane extends GridPane { 
     /**
