@@ -75,20 +75,21 @@ public class PassWordPane extends GridPane {
         add(result,0,3);
     }
 	
+    //Capture User's name and birthday and outputs generated password
     public void processResult(ActionEvent event){
         Random ran = new Random();// random number generator
        
-        String log = inputName.getText();
-        int pass =Integer.parseInt( inputDate.getText());
+        String name = inputName.getText();
+        int birthday =Integer.parseInt( inputDate.getText());
        
         //Gets the last 4 digit 
-        int fourdigit = pass%10000; 
+        int fourdigit = birthday%10000; 
        
         int num = ran.nextInt(90)+10;//random number 10-99
        
         /*displays the first two letter, 1-2 digit random number, 
         and last 4 digit of the date*/
-        result.setText(log.substring(0,2) +"."+num+ fourdigit+ "");
+        result.setText(name.substring(0,2) +"."+num+ fourdigit+ "");
     }
 }	
 	
