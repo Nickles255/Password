@@ -18,7 +18,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Font;
 import java.util.Random;
-// import java.text.DecimalFormat;
+import java.text.DecimalFormat;
 
 public class PassWordPane extends GridPane { 
     /**
@@ -81,22 +81,20 @@ public class PassWordPane extends GridPane {
     //Capture User's name and birthday and outputs generated password
     public void processResult(ActionEvent event){
         Random ran = new Random();// random number generator
-        // DecimalFormat fourDigitFormat = new DecimalFormat("0000"); //format in case fourdigit starts with a 0
+        DecimalFormat fourDigitFormat = new DecimalFormat("0000"); //format in case fourdigit starts with a 0
        
         String name = inputName.getText();
-        // int birthday =Integer.parseInt( inputDate.getText());
-        String birthday = inputDate.getText().substring(2,6); //get as string instead, so don't need to do math on it
-
-        // int num = ran.nextInt(90)+10;//random number 10-99
+        int birthday =Integer.parseInt( inputDate.getText());
+        
         int num = ran.nextInt(100); //random 1-2 digit number
        
         //Gets the last 4 digit 
-        // int fourdigit = birthday%10000; //need to format this to 0000
+        int fourdigit = birthday%10000; //need to format this to 0000
        
         /*displays the first two letter, 1-2 digit random number, 
         and last 4 digit of the date*/
-        // result.setText(name.substring(0,2) +"."+num+ fourDigitFormat.format(fourdigit)+ "");
-        result.setText(name.substring(0,2) +"."+num+ birthday+ "");
+        result.setText(name.substring(0,2) +"."+num+ fourDigitFormat.format(fourdigit)+ "");
+        
     }
 }	
 	
